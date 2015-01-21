@@ -1,5 +1,5 @@
 # eagle-libraries
-Libraries used by created by me for EAGLE
+Libraries used by created by me for EAGLE. These are all USE AT YOUR OWN RISK. I do use these libraries to spin boards but I do not gurantee footprints will always be correct.
 
 
 Micros:
