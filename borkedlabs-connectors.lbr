@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -315,6 +315,25 @@
 <text x="-7.6" y="15.2" size="2" layer="25" ratio="10">&gt;Name</text>
 <text x="-8" y="-8.9" size="2" layer="27" ratio="10">&gt;Value</text>
 </package>
+<package name="HIROSE_UX60RA-MB-5ST">
+<rectangle x1="0" y1="-3.35" x2="3.75" y2="3.35" layer="41"/>
+<rectangle x1="3.75" y1="-1" x2="4.9" y2="1" layer="41"/>
+<smd name="2" x="5.65" y="0.8" dx="1.5" dy="0.5" layer="1"/>
+<smd name="3" x="5.65" y="0" dx="1.5" dy="0.5" layer="1"/>
+<smd name="4" x="5.65" y="-0.8" dx="1.5" dy="0.5" layer="1"/>
+<smd name="5" x="5.65" y="-1.6" dx="1.5" dy="0.5" layer="1"/>
+<smd name="1" x="5.65" y="1.6" dx="1.5" dy="0.5" layer="1"/>
+<smd name="SH" x="1.35" y="4.55" dx="1.95" dy="2.4" layer="1"/>
+<smd name="SH@2" x="1.35" y="-4.55" dx="1.95" dy="2.4" layer="1"/>
+<smd name="SH@1" x="4.55" y="4.55" dx="2.2" dy="2.4" layer="1"/>
+<smd name="SH@3" x="4.55" y="-4.55" dx="2.2" dy="2.4" layer="1"/>
+<wire x1="0" y1="3.2" x2="4.7" y2="3.2" width="0.127" layer="21"/>
+<wire x1="4.7" y1="3.2" x2="4.7" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="4.7" y1="-3.2" x2="0" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.2" x2="0" y2="3.2" width="0.127" layer="21"/>
+<text x="7" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="7" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARM_SWD_10">
@@ -337,19 +356,21 @@
 <text x="-12.7" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="USB-5PIN">
-<wire x1="7.62" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<text x="5.334" y="1.778" size="2.54" layer="94" rot="R90">USB</text>
-<pin name="D+" x="-2.54" y="5.08" visible="pad" length="short"/>
-<pin name="D-" x="-2.54" y="7.62" visible="pad" length="short"/>
-<pin name="VBUS" x="-2.54" y="10.16" visible="pad" length="short"/>
-<pin name="GND" x="-2.54" y="0" visible="pad" length="short"/>
-<pin name="ID" x="-2.54" y="2.54" visible="pad" length="short"/>
-<pin name="MTN1" x="2.54" y="15.24" visible="pad" length="short" rot="R270"/>
-<pin name="MTN2" x="5.08" y="15.24" visible="pad" length="short" rot="R270"/>
-<pin name="MTN3" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
-<pin name="MTN4" x="5.08" y="-5.08" visible="pad" length="short" rot="R90"/>
+<wire x1="10.16" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="15.494" y="-3.302" size="2.54" layer="94" rot="R90">USB</text>
+<pin name="D+" x="-7.62" y="0" length="short"/>
+<pin name="D-" x="-7.62" y="2.54" length="short"/>
+<pin name="VBUS" x="-7.62" y="5.08" length="short"/>
+<pin name="GND" x="-7.62" y="-5.08" length="short"/>
+<pin name="ID" x="-7.62" y="-2.54" length="short"/>
+<pin name="SH4" x="10.16" y="-10.16" length="short" rot="R90"/>
+<pin name="SH1" x="2.54" y="-10.16" length="short" rot="R90"/>
+<pin name="SH2" x="5.08" y="-10.16" length="short" rot="R90"/>
+<pin name="SH3" x="7.62" y="-10.16" length="short" rot="R90"/>
+<text x="17.78" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="17.78" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="JTAGICE3">
 <pin name="TCK" x="-17.78" y="5.08" length="middle"/>
@@ -466,7 +487,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB-MINIB">
+<deviceset name="USB-MINIB" prefix="J">
 <description>&lt;b&gt;Mini-USB "B" connector with 5th pin broken out.&lt;/b&gt;&lt;p&gt;
 Created new symbol breaking out 5th "ID" pin in mini/micro USB connector spec.  See: http://en.wikipedia.org/wiki/Mini_usb#Cables.  Uses same footprint as 4-pin symbol.&lt;p&gt;
  
@@ -482,10 +503,10 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="MTN1" pad="MTN3"/>
-<connect gate="G$1" pin="MTN2" pad="MTN1"/>
-<connect gate="G$1" pin="MTN3" pad="MTN2"/>
-<connect gate="G$1" pin="MTN4" pad="MTN4"/>
+<connect gate="G$1" pin="SH1" pad="MTN1"/>
+<connect gate="G$1" pin="SH2" pad="MTN2"/>
+<connect gate="G$1" pin="SH3" pad="MTN3"/>
+<connect gate="G$1" pin="SH4" pad="MTN4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -498,11 +519,27 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
-<connect gate="G$1" pin="MTN1" pad="MTN1"/>
-<connect gate="G$1" pin="MTN2" pad="MTN2"/>
-<connect gate="G$1" pin="MTN3" pad="MTN3"/>
-<connect gate="G$1" pin="MTN4" pad="MTN4"/>
+<connect gate="G$1" pin="SH1" pad="MTN1"/>
+<connect gate="G$1" pin="SH2" pad="MTN2"/>
+<connect gate="G$1" pin="SH3" pad="MTN3"/>
+<connect gate="G$1" pin="SH4" pad="MTN4"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="HIROSE_UX60RA-MB-5ST">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="ID" pad="4"/>
+<connect gate="G$1" pin="SH1" pad="SH"/>
+<connect gate="G$1" pin="SH2" pad="SH@1"/>
+<connect gate="G$1" pin="SH3" pad="SH@2"/>
+<connect gate="G$1" pin="SH4" pad="SH@3"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
