@@ -8,8 +8,9 @@ ATTINY1634
 SAM3S4B
 SAM3U4C
 SAM4ExE
-SAMD21E (compatible with all ATSAMDxxE devices)
-SAMD21J (compatible with all ATSAMDxxJ devices)
+SAMD21E (compatible with all ATSAMDxxE-A devices)
+SAMD21G (compatible with all ATSAMDxxG-A devices)
+SAMD21J (compatible with all ATSAMDxxJ-A devices)
 XMEGAE
 
 Connectors:
@@ -18,10 +19,12 @@ PJ-073
 DM3CS-SF
 
 PowerICs:
-MCP1700
 BQ34Z100
-MIC5201
+IRS21867S
 L5970D
+LTC6102
+MCP1700
+MIC5201
 
 Transceivers:
 LTC2875
