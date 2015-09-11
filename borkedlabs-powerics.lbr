@@ -265,6 +265,22 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <text x="-12.7" y="11.176" size="1.27" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="IRS21867S">
+<pin name="VCC" x="-15.24" y="5.08" length="middle"/>
+<pin name="HIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="LIN" x="-15.24" y="0" length="middle"/>
+<pin name="COM" x="-15.24" y="-2.54" length="middle"/>
+<pin name="LO" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VS" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="HO" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VB" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.382" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MCP1700" prefix="U" uservalue="yes">
@@ -385,6 +401,28 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <connect gate="G$1" pin="V-" pad="5"/>
 <connect gate="G$1" pin="V-/EN*" pad="3"/>
 <connect gate="G$1" pin="VREG" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRS21867S" prefix="U">
+<gates>
+<gate name="G$1" symbol="IRS21867S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO-8">
+<connects>
+<connect gate="G$1" pin="COM" pad="4"/>
+<connect gate="G$1" pin="HIN" pad="2"/>
+<connect gate="G$1" pin="HO" pad="7"/>
+<connect gate="G$1" pin="LIN" pad="3"/>
+<connect gate="G$1" pin="LO" pad="5"/>
+<connect gate="G$1" pin="VB" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
