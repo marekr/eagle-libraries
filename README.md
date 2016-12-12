@@ -17,6 +17,7 @@ Connectors:
 ARM_10 (10 pin SWD/reduced jtag connector, 1.27mm pitched)
 PJ-073
 DM3CS-SF
+12401610E4#2A
 
 PowerICs:
 BQ34Z100

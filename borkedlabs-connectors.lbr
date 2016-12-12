@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -360,6 +360,65 @@
 <wire x1="-1" y1="-3" x2="-2" y2="-3" width="0.127" layer="21"/>
 <wire x1="-2" y1="-3" x2="-2" y2="3" width="0.127" layer="21"/>
 </package>
+<package name="12401610E4#2A">
+<smd name="A6" x="-0.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A5" x="-0.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A4" x="-1.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A3" x="-1.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A2" x="-2.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A1" x="-2.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A12" x="2.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A11" x="2.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A10" x="1.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A9" x="1.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A8" x="0.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="A7" x="0.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B7" x="-0.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B8" x="-1" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B9" x="-1.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B10" x="-2" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B11" x="-2.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B12" x="-3" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B1" x="2.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B2" x="2" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B3" x="1.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B4" x="1" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B5" x="0.5" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="B6" x="0" y="-1.25" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<hole x="-3.6" y="0" drill="0.65"/>
+<hole x="3.6" y="0" drill="0.65"/>
+<wire x1="3.125" y1="0.325" x2="4.075" y2="0.325" width="0" layer="46"/>
+<wire x1="4.075" y1="0.325" x2="4.075" y2="-0.325" width="0" layer="46"/>
+<wire x1="4.075" y1="-0.325" x2="3.125" y2="-0.325" width="0" layer="46"/>
+<wire x1="3.125" y1="-0.325" x2="3.125" y2="0.325" width="0" layer="46"/>
+<pad name="SH1" x="-4.13" y="-1.25" drill="0.5" diameter="0.8"/>
+<pad name="SH3" x="4.13" y="-1.25" drill="0.5" diameter="0.8"/>
+<pad name="SH2" x="-4.49" y="-7.2" drill="0.5" diameter="0.8"/>
+<pad name="SH4" x="4.49" y="-7.2" drill="0.5" diameter="0.8"/>
+<wire x1="-4.38" y1="-0.7" x2="-4.38" y2="-1.8" width="0" layer="46"/>
+<wire x1="-4.38" y1="-1.8" x2="-3.88" y2="-1.8" width="0" layer="46"/>
+<wire x1="-3.88" y1="-1.8" x2="-3.88" y2="-0.7" width="0" layer="46"/>
+<wire x1="-3.88" y1="-0.7" x2="-4.38" y2="-0.7" width="0" layer="46"/>
+<wire x1="3.88" y1="-1.8" x2="4.38" y2="-1.8" width="0" layer="46"/>
+<wire x1="4.38" y1="-1.8" x2="4.38" y2="-0.7" width="0" layer="46"/>
+<wire x1="4.38" y1="-0.7" x2="3.88" y2="-0.7" width="0" layer="46"/>
+<wire x1="3.88" y1="-0.7" x2="3.88" y2="-1.8" width="0" layer="46"/>
+<wire x1="-4.74" y1="-6.65" x2="-4.74" y2="-7.75" width="0" layer="46"/>
+<wire x1="-4.74" y1="-7.75" x2="-4.24" y2="-7.75" width="0" layer="46"/>
+<wire x1="-4.24" y1="-7.75" x2="-4.24" y2="-6.65" width="0" layer="46"/>
+<wire x1="-4.74" y1="-6.65" x2="-4.24" y2="-6.65" width="0" layer="46"/>
+<wire x1="4.24" y1="-7.75" x2="4.74" y2="-7.75" width="0" layer="46"/>
+<wire x1="4.74" y1="-7.75" x2="4.74" y2="-6.65" width="0" layer="46"/>
+<wire x1="4.74" y1="-6.65" x2="4.24" y2="-6.65" width="0" layer="46"/>
+<wire x1="4.24" y1="-6.65" x2="4.24" y2="-7.75" width="0" layer="46"/>
+<wire x1="-5" y1="1" x2="-5" y2="-9.1" width="0.1" layer="21"/>
+<wire x1="-5" y1="-9.1" x2="5" y2="-9.1" width="0.1" layer="21"/>
+<wire x1="5" y1="-9.1" x2="5" y2="1" width="0.1" layer="21"/>
+<wire x1="-5" y1="1" x2="-4" y2="1" width="0.1" layer="21"/>
+<wire x1="4" y1="1" x2="5" y2="1" width="0.1" layer="21"/>
+<text x="5" y="-1.7" size="1.016" layer="25">&gt;NAME</text>
+<text x="5" y="-3" size="1.016" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARM_SWD_10">
@@ -483,6 +542,42 @@
 <pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="USB-C-4SH">
+<wire x1="15.24" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<pin name="TX1-" x="-15.24" y="12.7" length="short"/>
+<pin name="TX1+" x="-15.24" y="15.24" length="short"/>
+<pin name="GND@A1" x="-15.24" y="17.78" length="short"/>
+<pin name="CC1" x="-15.24" y="7.62" length="short"/>
+<pin name="VBUS@A4" x="-15.24" y="10.16" length="short"/>
+<pin name="SH4" x="5.08" y="-22.86" length="short" rot="R90"/>
+<pin name="SH1" x="-2.54" y="-22.86" length="short" rot="R90"/>
+<pin name="SH2" x="0" y="-22.86" length="short" rot="R90"/>
+<pin name="SH3" x="2.54" y="-22.86" length="short" rot="R90"/>
+<text x="-12.7" y="21.082" size="1.27" layer="95">&gt;NAME</text>
+<text x="10.16" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="D+@A6" x="-15.24" y="5.08" length="short"/>
+<pin name="D-@A7" x="-15.24" y="2.54" length="short"/>
+<pin name="SBU1" x="-15.24" y="0" length="short"/>
+<pin name="VBUS@A9" x="-15.24" y="-2.54" length="short"/>
+<pin name="RX2-" x="-15.24" y="-5.08" length="short"/>
+<pin name="RX2+" x="-15.24" y="-7.62" length="short"/>
+<pin name="GND@A12" x="-15.24" y="-10.16" length="short"/>
+<pin name="TX2-" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="TX2+" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="GND@B1" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="CC2" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="VBUS@B4" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="D+@B6" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="D-@B7" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="SBU2" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="VBUS@B9" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="RX1-" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="RX1+" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="GND@B12" x="17.78" y="17.78" length="short" rot="R180"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -694,6 +789,48 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="GNDBREAK" pad="3"/>
 <connect gate="G$1" pin="PWR" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB-C-4SH" prefix="J">
+<gates>
+<gate name="G$1" symbol="USB-C-4SH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-12401610E4#2A" package="12401610E4#2A">
+<connects>
+<connect gate="G$1" pin="CC1" pad="A5"/>
+<connect gate="G$1" pin="CC2" pad="B5"/>
+<connect gate="G$1" pin="D+@A6" pad="A6"/>
+<connect gate="G$1" pin="D+@B6" pad="B6"/>
+<connect gate="G$1" pin="D-@A7" pad="A7"/>
+<connect gate="G$1" pin="D-@B7" pad="B7"/>
+<connect gate="G$1" pin="GND@A1" pad="A1"/>
+<connect gate="G$1" pin="GND@A12" pad="A12"/>
+<connect gate="G$1" pin="GND@B1" pad="B1"/>
+<connect gate="G$1" pin="GND@B12" pad="B12"/>
+<connect gate="G$1" pin="RX1+" pad="B11"/>
+<connect gate="G$1" pin="RX1-" pad="B10"/>
+<connect gate="G$1" pin="RX2+" pad="A11"/>
+<connect gate="G$1" pin="RX2-" pad="A10"/>
+<connect gate="G$1" pin="SBU1" pad="A8"/>
+<connect gate="G$1" pin="SBU2" pad="B8"/>
+<connect gate="G$1" pin="SH1" pad="SH1"/>
+<connect gate="G$1" pin="SH2" pad="SH2"/>
+<connect gate="G$1" pin="SH3" pad="SH3"/>
+<connect gate="G$1" pin="SH4" pad="SH4"/>
+<connect gate="G$1" pin="TX1+" pad="A2"/>
+<connect gate="G$1" pin="TX1-" pad="A3"/>
+<connect gate="G$1" pin="TX2+" pad="B2"/>
+<connect gate="G$1" pin="TX2-" pad="B3"/>
+<connect gate="G$1" pin="VBUS@A4" pad="A4"/>
+<connect gate="G$1" pin="VBUS@A9" pad="A9"/>
+<connect gate="G$1" pin="VBUS@B4" pad="B4"/>
+<connect gate="G$1" pin="VBUS@B9" pad="B9"/>
 </connects>
 <technologies>
 <technology name=""/>
