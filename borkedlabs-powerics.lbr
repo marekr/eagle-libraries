@@ -1040,7 +1040,7 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7042.pdf</description>
 <text x="-2.45" y="2.8" size="1.016" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-4.15" size="1.016" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="29"/>
-<smd name="P$1" x="0" y="0" dx="2.3" dy="2.3" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="2.3" dy="2.3" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1725,7 +1725,7 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7042.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS25740">
+<deviceset name="TPS25740" prefix="U">
 <gates>
 <gate name="G$1" symbol="TPS25740" x="0" y="2.54"/>
 </gates>
@@ -1749,7 +1749,7 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7042.pdf</description>
 <connect gate="G$1" pin="ISNS" pad="19"/>
 <connect gate="G$1" pin="NC@10" pad="10"/>
 <connect gate="G$1" pin="NC@9" pad="9"/>
-<connect gate="G$1" pin="PAD" pad="P$1"/>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
 <connect gate="G$1" pin="PCTRL" pad="14"/>
 <connect gate="G$1" pin="PSEL" pad="12"/>
 <connect gate="G$1" pin="VAUX" pad="16"/>
