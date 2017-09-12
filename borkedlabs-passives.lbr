@@ -513,8 +513,8 @@ chip</description>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<text x="-3.81" y="-6.858" size="1.27" layer="95">&gt;PRECISION</text>
-<text x="-3.81" y="-5.08" size="1.27" layer="95">&gt;PACKAGE</text>
+<text x="-3.81" y="-6.858" size="1.27" layer="97">&gt;PRECISION</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>

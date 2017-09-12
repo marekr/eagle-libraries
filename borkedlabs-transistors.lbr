@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -171,7 +171,7 @@
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="SO8-UNI">
+<package name="POWER-SO8">
 <description>SO8/DFN5X6/PowerPad universal footprint per AND9137-D from On Semi</description>
 <smd name="1" x="-3.02" y="1.905" dx="1.15" dy="0.7" layer="1"/>
 <smd name="2" x="-3.02" y="0.635" dx="1.15" dy="0.7" layer="1"/>
@@ -430,6 +430,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <vertex x="-0.508" y="0.762"/>
 <vertex x="-0.508" y="-0.762"/>
 </polygon>
+<text x="-13.716" y="-5.08" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="P_MOSFET">
 <wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.254" layer="94"/>
@@ -467,6 +468,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <vertex x="-1.016" y="0.762"/>
 <vertex x="-1.016" y="-0.762"/>
 </polygon>
+<text x="-13.97" y="-6.35" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="NPN">
 <wire x1="0" y1="2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
@@ -487,6 +489,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <pin name="B" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="E" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="C" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="2.54" y="-2.54" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="PNP">
 <wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
@@ -508,6 +511,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <pin name="B" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="E" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="2.54" y="-2.54" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="ZXGD300XXX">
 <pin name="VCC" x="0" y="15.24" length="middle" rot="R270"/>
@@ -538,7 +542,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-3"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -556,7 +562,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-3"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -567,14 +575,16 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO8-UNI">
+<device name="" package="POWER-SO8">
 <connects>
 <connect gate="G$1" pin="D" pad="5 6 7 8 PAD SIDEPAD1 SIDEPAD2"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="POWER-S08"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -596,7 +606,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="PNP" pin="E" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-6" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -607,14 +619,16 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <gate name="G$1" symbol="P_MOSFET" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO8-UNI">
+<device name="" package="POWER-SO8">
 <connects>
 <connect gate="G$1" pin="D" pad="5 6 7 8 PAD SIDEPAD1 SIDEPAD2"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="POWER-SO8" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -632,7 +646,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-3"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -649,7 +665,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="E" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-6" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -670,7 +688,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-6"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -691,7 +711,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="B" pin="E" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT363"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -708,7 +730,11 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="TI" constant="no"/>
+<attribute name="MPN" value="CSD17578Q3A" constant="no"/>
+<attribute name="PACKAGE" value="TSDSON-8"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -725,7 +751,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="XFDFN-3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -742,7 +770,10 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="BSS84W-7-F" constant="no"/>
+<attribute name="PACKAGE" value="SOT323"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -759,7 +790,11 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="INFINEON" constant="no"/>
+<attribute name="MPN" value="BSZ042N06NS" constant="no"/>
+<attribute name="PACKAGE" value="TSDSON-8"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -777,7 +812,11 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="DIODES INC" constant="no"/>
+<attribute name="MPN" value="BSS138W-7-F" constant="no"/>
+<attribute name="PACKAGE" value="SOT323" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
