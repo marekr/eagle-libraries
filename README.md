@@ -8,10 +8,11 @@ ATTINY1634
 SAM3S4B
 SAM3U4C
 SAM4ExE
-SAMD21E (compatible with all ATSAMDxxE-A devices)
-SAMD21G (compatible with all ATSAMDxxG-A devices)
+SAMD21E (compatible with all ATSAMDxxE-A devices) - QFN32, LFQP32
+SAMD21G (compatible with all ATSAMDxxG-A devices) - QFN48, LQFP48
 SAMD21J (compatible with all ATSAMDxxJ-A devices)
 XMEGAE
+STM32F072R
 
 Connectors:
 ARM_10 (10 pin SWD/reduced jtag connector, 1.27mm pitched)
@@ -73,6 +74,7 @@ PMP5201
 CSD17578Q3A
 CSD17483F4
 BSS84W-7-F
+BSS138W-7-F
 
 
 Diodes:
