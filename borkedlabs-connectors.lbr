@@ -140,16 +140,16 @@
 <library>
 <packages>
 <package name="2X5_1.27MM_SMD">
-<smd name="1" x="-3.15" y="2.54" dx="2.4" dy="0.76" layer="1"/>
-<smd name="3" x="-3.15" y="1.27" dx="2.4" dy="0.76" layer="1"/>
-<smd name="5" x="-3.15" y="0" dx="2.4" dy="0.76" layer="1"/>
-<smd name="7" x="-3.15" y="-1.27" dx="2.4" dy="0.76" layer="1"/>
-<smd name="9" x="-3.15" y="-2.54" dx="2.4" dy="0.76" layer="1"/>
-<smd name="10" x="3.15" y="-2.54" dx="2.4" dy="0.76" layer="1" rot="R180"/>
-<smd name="8" x="3.15" y="-1.27" dx="2.4" dy="0.76" layer="1" rot="R180"/>
-<smd name="6" x="3.15" y="0" dx="2.4" dy="0.76" layer="1" rot="R180"/>
-<smd name="4" x="3.15" y="1.27" dx="2.4" dy="0.76" layer="1" rot="R180"/>
-<smd name="2" x="3.15" y="2.54" dx="2.4" dy="0.76" layer="1" rot="R180"/>
+<smd name="1" x="-1.6" y="2.54" dx="2.4" dy="0.76" layer="1"/>
+<smd name="3" x="-1.6" y="1.27" dx="2.4" dy="0.76" layer="1"/>
+<smd name="5" x="-1.6" y="0" dx="2.4" dy="0.76" layer="1"/>
+<smd name="7" x="-1.6" y="-1.27" dx="2.4" dy="0.76" layer="1"/>
+<smd name="9" x="-1.6" y="-2.54" dx="2.4" dy="0.76" layer="1"/>
+<smd name="10" x="1.6" y="-2.54" dx="2.4" dy="0.76" layer="1" rot="R180"/>
+<smd name="8" x="1.6" y="-1.27" dx="2.4" dy="0.76" layer="1" rot="R180"/>
+<smd name="6" x="1.6" y="0" dx="2.4" dy="0.76" layer="1" rot="R180"/>
+<smd name="4" x="1.6" y="1.27" dx="2.4" dy="0.76" layer="1" rot="R180"/>
+<smd name="2" x="1.6" y="2.54" dx="2.4" dy="0.76" layer="1" rot="R180"/>
 <wire x1="-1.715" y1="3.175" x2="-1.715" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-1.715" y1="-3.175" x2="1.715" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="1.715" y1="-3.175" x2="1.715" y2="3.175" width="0.127" layer="21"/>
@@ -360,7 +360,7 @@
 <wire x1="-1" y1="-3" x2="-2" y2="-3" width="0.127" layer="21"/>
 <wire x1="-2" y1="-3" x2="-2" y2="3" width="0.127" layer="21"/>
 </package>
-<package name="12401610E4#2A">
+<package name="12401610E4">
 <smd name="A6" x="-0.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
 <smd name="A5" x="-0.75" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
 <smd name="A4" x="-1.25" y="0.68" dx="0.7" dy="0.3" layer="1" rot="R90"/>
@@ -510,6 +510,44 @@ Short Type WR-COM</description>
 <text x="6" y="4.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="6" y="2.27" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TC2030">
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="0" y="0" drill="0.6"/>
+<hole x="0" y="0" drill="0.9906"/>
+<hole x="5.08" y="1.016" drill="0.9906"/>
+<hole x="5.08" y="-1.016" drill="0.9906"/>
+<hole x="0" y="2.54" drill="2.3749"/>
+<hole x="3.175" y="2.54" drill="2.3749"/>
+<hole x="0" y="-2.54" drill="2.3749"/>
+<hole x="3.175" y="-2.54" drill="2.3749"/>
+<text x="6.35" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="6.35" y="0.635" size="1.27" layer="25">&gt;VALUE</text>
+</package>
+<package name="TC2050-IDC">
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="2" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="5.08" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="6.35" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="6.35" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="7" x="5.08" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="8" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="9" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="10" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="0" y="0" drill="0.9906"/>
+<hole x="7.62" y="1.016" drill="0.9906"/>
+<hole x="7.62" y="-1.016" drill="0.9906"/>
+<rectangle x1="1.27" y1="-0.635" x2="6.35" y2="0.635" layer="39"/>
+<hole x="0" y="2.54" drill="2.3749"/>
+<hole x="5.715" y="2.54" drill="2.3749"/>
+<hole x="0" y="-2.54" drill="2.3749"/>
+<hole x="5.715" y="-2.54" drill="2.3749"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARM_SWD_10">
@@ -525,11 +563,11 @@ Short Type WR-COM</description>
 <pin name="SWDIO/TMS" x="17.78" y="5.08" length="middle" rot="R180"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <text x="-12.7" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.27" layer="97">&gt;PACKAGE</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB-5PIN">
 <wire x1="10.16" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
@@ -690,8 +728,9 @@ Short Type WR-COM</description>
 <pin name="VBUS" x="-12.7" y="5.08" length="short"/>
 <pin name="GND" x="-12.7" y="-2.54" length="short"/>
 <pin name="SH" x="-2.54" y="-10.16" length="short" rot="R90"/>
-<text x="7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="7.62" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
+<text x="7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="7.62" y="5.08" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="CON4">
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-10.16" width="0.254" layer="94"/>
@@ -730,10 +769,12 @@ Short Type WR-COM</description>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="2x5_1.27MM_SMD"/>
+</technology>
 </technologies>
 </device>
-<device name="" package="2X5_1.27MM_PTH">
+<device name="PTH" package="2X5_1.27MM_PTH">
 <connects>
 <connect gate="G$1" pin="GND@3" pad="3"/>
 <connect gate="G$1" pin="GND@5" pad="5"/>
@@ -747,7 +788,28 @@ Short Type WR-COM</description>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="2x5_1.27MM_PTH"/>
+</technology>
+</technologies>
+</device>
+<device name="TDC2050-IDC" package="TC2050-IDC">
+<connects>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@7" pad="7"/>
+<connect gate="G$1" pin="GND@9" pad="9"/>
+<connect gate="G$1" pin="NC/TDI" pad="8"/>
+<connect gate="G$1" pin="NRESET" pad="10"/>
+<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
+<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
+<connect gate="G$1" pin="SWO/TDO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PACKAGE" value="TC2050-IDC"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -931,7 +993,7 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <gate name="G$1" symbol="USB-C-4SH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-12401610E4#2A" package="12401610E4#2A">
+<device name="-12401610E4#2A" package="12401610E4">
 <connects>
 <connect gate="G$1" pin="CC1" pad="A5"/>
 <connect gate="G$1" pin="CC2" pad="B5"/>
@@ -997,7 +1059,10 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="Wurth"/>
+<attribute name="MPN" value="629104190121"/>
+</technology>
 </technologies>
 </device>
 <device name="-WURTH-614104150121" package="WURTH-614104150121">
@@ -1009,7 +1074,10 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="Wurth"/>
+<attribute name="MPN" value="614104150121"/>
+</technology>
 </technologies>
 </device>
 <device name="-WURTH-614104190121" package="WURTH-614104190121">
@@ -1021,7 +1089,11 @@ Also added pins to connect to mounting / shield pads if required (probably not g
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="Wurth"/>
+<attribute name="MPN" value="614104190121"/>
+<attribute name="PACKAGE" value="614104190121"/>
+</technology>
 </technologies>
 </device>
 </devices>
