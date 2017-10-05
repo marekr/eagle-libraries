@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -383,6 +383,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <pin name="C1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="-10.16" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="2_DATA_3TVS">
 <wire x1="-3.81" y1="2.032" x2="-3.302" y2="2.667" width="0.254" layer="94"/>
@@ -397,9 +398,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="3.81" y1="8.128" x2="3.302" y2="7.493" width="0.254" layer="94"/>
 <wire x1="5.08" y1="9.398" x2="5.08" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-1.524" x2="-5.08" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="3.81" x2="-10.16" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="3.81" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="3.81" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-7.62" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="3.81" x2="-7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="3.81" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-1.524" x2="0" y2="-1.524" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.524" x2="5.08" y2="-1.524" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.524" x2="0" y2="-2.54" width="0.1524" layer="94"/>
@@ -408,29 +409,32 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-5.08" y1="9.398" x2="-5.08" y2="3.81" width="0.1524" layer="94"/>
 <wire x1="0" y1="9.398" x2="5.08" y2="9.398" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="3.81" x2="5.08" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="3.81" x2="10.16" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="3.81" x2="10.16" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="3.81" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="7.62" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="3.81" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="9.398" x2="0" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="12.7" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-12.7" y1="-2.54" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-10.16" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
 <circle x="-5.08" y="3.81" radius="0.127" width="0.1524" layer="94"/>
 <circle x="5.08" y="3.81" radius="0.127" width="0.1524" layer="94"/>
 <circle x="0" y="9.398" radius="0.127" width="0.1524" layer="94"/>
 <circle x="0" y="-1.524" radius="0.127" width="0.1524" layer="94"/>
-<circle x="-10.16" y="3.81" radius="0.127" width="0.1524" layer="94"/>
-<circle x="10.16" y="3.81" radius="0.127" width="0.1524" layer="94"/>
-<pin name="I/O1@2" x="-10.16" y="12.7" visible="off" length="short" rot="R270"/>
-<pin name="I/O1" x="-10.16" y="-5.08" visible="off" length="short" rot="R90"/>
-<pin name="VBUS" x="0" y="12.7" visible="off" length="short" rot="R270"/>
-<pin name="I/O2@2" x="10.16" y="12.7" visible="off" length="short" rot="R270"/>
-<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-<pin name="I/O2" x="10.16" y="-5.08" visible="off" length="short" rot="R90"/>
-<text x="-20.32" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="-20.32" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="-7.62" y="3.81" radius="0.127" width="0.1524" layer="94"/>
+<circle x="7.62" y="3.81" radius="0.127" width="0.1524" layer="94"/>
+<pin name="I/O1@2" x="-7.62" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="I/O1" x="-7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="VBUS" x="0" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="I/O2@2" x="7.62" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="GND" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="I/O2" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<text x="-20.32" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 <wire x1="-3.81" y1="5.588" x2="-5.08" y2="8.128" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="8.128" x2="-6.35" y2="5.588" width="0.254" layer="94"/>
 <wire x1="-6.35" y1="8.128" x2="-5.08" y2="8.128" width="0.254" layer="94"/>
@@ -456,6 +460,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="3.81" y1="8.128" x2="5.08" y2="8.128" width="0.254" layer="94"/>
 <wire x1="3.81" y1="5.588" x2="6.35" y2="5.588" width="0.254" layer="94"/>
 <wire x1="5.08" y1="8.128" x2="6.35" y2="8.128" width="0.254" layer="94"/>
+<text x="-20.32" y="2.54" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="LED_RGB_COMMON_ANODE">
 <wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
@@ -485,36 +490,30 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <pin name="C2" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
 <pin name="C1" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
 <pin name="A" x="0" y="7.62" visible="off" length="short" rot="R270"/>
-<wire x1="-8.636" y1="1.016" x2="-8.636" y2="1.778" width="0.254" layer="94"/>
 <wire x1="-8.636" y1="1.778" x2="-8.636" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-8.382" y1="1.016" x2="-7.874" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-7.874" y1="1.016" x2="-8.636" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-8.636" y1="1.016" x2="-7.874" y2="1.016" width="0.254" layer="94"/>
 <wire x1="-8.636" y1="1.016" x2="-7.62" y2="2.032" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.016" x2="-2.54" y2="1.778" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="1.778" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="1.016" x2="-1.778" y2="1.016" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="3.302" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-1.778" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-1.778" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-1.524" y2="3.556" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="1.016" x2="-1.524" y2="2.032" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.778" x2="2.54" y2="1.016" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.016" x2="3.302" y2="1.016" width="0.254" layer="94"/>
 <wire x1="3.302" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.016" x2="3.556" y2="2.032" width="0.254" layer="94"/>
 <wire x1="2.54" y1="3.302" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.302" y2="2.54" width="0.254" layer="94"/>
 <wire x1="3.302" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="3.556" y2="3.556" width="0.254" layer="94"/>
 <wire x1="-7.874" y1="2.54" x2="-8.636" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-8.636" y1="2.54" x2="-8.636" y2="3.302" width="0.254" layer="94"/>
 <wire x1="-8.636" y1="3.302" x2="-8.636" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-8.636" y1="2.54" x2="-7.62" y2="3.556" width="0.254" layer="94"/>
-<text x="-17.78" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<text x="-17.78" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-20.32" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-7.112" y="5.588" size="1.778" layer="94">G</text>
 <text x="-2.54" y="5.588" size="1.778" layer="94">R</text>
 <text x="4.064" y="5.588" size="1.778" layer="94">B</text>
+<text x="-20.32" y="0" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="DUOLED-RG-C">
 <wire x1="1.27" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -639,6 +638,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.286" y="-5.334" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="ESD">
 <wire x1="-1.27" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
@@ -676,8 +676,8 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
 <wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.254" layer="94"/>
 <wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
-<text x="-5.334" y="8.3566" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.334" y="-10.3124" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="8.3566" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-10.3124" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="IOA1" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="IOA2" x="10.16" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="6.35" y1="-3.81" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
@@ -706,6 +706,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="-12.7" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -741,7 +742,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -761,7 +764,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="VBUS" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOT23-6" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -779,7 +784,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SMD-4"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -836,7 +843,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SMC"/>
+</technology>
 </technologies>
 </device>
 <device name="SMA" package="SMA">
@@ -845,7 +854,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SMA"/>
+</technology>
 </technologies>
 </device>
 <device name="SC79" package="SC79">
@@ -854,7 +865,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SC79"/>
+</technology>
 </technologies>
 </device>
 <device name="MICROSMP" package="MICROSMP">
@@ -863,7 +876,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="MICROSMP"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD523" package="SOD523">
@@ -872,7 +887,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="SOD523"/>
+</technology>
 </technologies>
 </device>
 <device name="POWERDI5" package="POWERDI5">
@@ -881,7 +898,9 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="POWERDI5"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -918,7 +937,11 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <connect gate="G$1" pin="NC@6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="TI" constant="no"/>
+<attribute name="MPN" value="TPD2E1B06DRLR" constant="no"/>
+<attribute name="PACKAGE" value="SOT6-DRL"/>
+</technology>
 </technologies>
 </device>
 </devices>
