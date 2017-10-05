@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -218,6 +218,7 @@ Source: http://focus.ti.com/lit/ds/symlink/sn65als176.pdf</description>
 <wire x1="0" y1="-3.302" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <text x="0.254" y="5.08" size="1.016" layer="95">V+</text>
 <text x="0.254" y="-5.08" size="1.016" layer="95">V-</text>
+<text x="5.08" y="-8.382" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
 <symbol name="OPAMP_NO_PWR">
 <pin name="+" x="-7.62" y="2.54" visible="pad" length="middle"/>
@@ -248,7 +249,11 @@ Source: http://focus.ti.com/lit/ds/symlink/sn65als176.pdf</description>
 <connect gate="G$1" pin="V-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANU" value="TI" constant="no"/>
+<attribute name="MPN" value="TS321" constant="no"/>
+<attribute name="PACKAGE" value="SOT23-5"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -326,6 +331,30 @@ Source: http://focus.ti.com/lit/ds/symlink/sn65als176.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV316" prefix="U">
+<description>10-MHz, Rail-to-Rail Input/Output, Low-Voltage, 1.8-V CMOS Operational Amplifiers</description>
+<gates>
+<gate name="G$1" symbol="OPAMP_SINGLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="+" pad="3"/>
+<connect gate="G$1" pin="-" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANU" value="TI" constant="no"/>
+<attribute name="MPN" value="TLV316IDBV" constant="no"/>
+<attribute name="PACKAGE" value="SOT23-5"/>
+</technology>
 </technologies>
 </device>
 </devices>
