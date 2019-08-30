@@ -4,7 +4,9 @@ Libraries used by created by me for EAGLE. These are all USE AT YOUR OWN RISK. I
 
 Micros:
 ATMEGA328
+ATTINY1617
 ATTINY1634
+ATSAMD/E5XN
 SAM3S4B
 SAM3U4C
 SAM4ExE
