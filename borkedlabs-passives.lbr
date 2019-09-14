@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -155,7 +155,7 @@
 </layers>
 <library>
 <packages>
-<package name="744777920-INDUCTOR">
+<package name="WURTH-744777920-IND">
 <smd name="P$1" x="0" y="3" dx="1.7" dy="2" layer="1"/>
 <smd name="P$2" x="0" y="-3" dx="1.7" dy="2" layer="1"/>
 <wire x1="-4" y1="0" x2="-4" y2="3" width="0.127" layer="21"/>
@@ -420,7 +420,7 @@ chip</description>
 <text x="5.08" y="7.62" size="1.016" layer="25">&gt;NAME</text>
 <text x="5.08" y="-8.89" size="1.016" layer="27">&gt;VALUE</text>
 </package>
-<package name="7443340330-IND">
+<package name="WURTH-7443340330-IND">
 <smd name="P$1" x="0" y="3.35" dx="3" dy="2.3" layer="1"/>
 <smd name="P$2" x="0" y="-3.35" dx="3" dy="2.3" layer="1"/>
 <wire x1="-2" y1="4" x2="-4" y2="4" width="0.127" layer="21"/>
@@ -483,7 +483,7 @@ chip</description>
 <text x="-5" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="3.81" layer="39"/>
 </package>
-<package name="744029100-IND">
+<package name="WURTH-744029100-IND">
 <smd name="1" x="0" y="1.1" dx="3.2" dy="1" layer="1"/>
 <smd name="2" x="0" y="-1.1" dx="3.2" dy="1" layer="1"/>
 <wire x1="-2" y1="2" x2="-2" y2="-2" width="0.127" layer="21"/>
@@ -493,7 +493,7 @@ chip</description>
 <text x="-3" y="2.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="7447709470-IND">
+<package name="WURTH-12X12X10-IND">
 <smd name="1" x="0" y="4.95" dx="5.4" dy="2.9" layer="1"/>
 <smd name="2" x="0" y="-4.95" dx="5.4" dy="2.9" layer="1"/>
 <wire x1="-3" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
@@ -505,7 +505,7 @@ chip</description>
 <text x="-7" y="8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7" y="-9" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="7447789002-IND">
+<package name="WURTH-7447789002-IND">
 <smd name="1" x="0" y="3" dx="1.7" dy="2" layer="1"/>
 <smd name="2" x="0" y="-3" dx="1.7" dy="2" layer="1"/>
 <wire x1="2" y1="-4" x2="4" y2="-4" width="0.127" layer="21"/>
@@ -532,6 +532,22 @@ chip</description>
 <text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <rectangle x1="-3.65" y1="-2.15" x2="3.65" y2="2.15" layer="39"/>
+</package>
+<package name="FUSE-KS-3544-2">
+<pad name="P$1" x="-5.8928" y="0" drill="1.651"/>
+<pad name="P$2" x="-2.2352" y="0" drill="1.651"/>
+<pad name="P$3" x="2.2352" y="0" drill="1.651"/>
+<pad name="P$4" x="5.8928" y="0" drill="1.651"/>
+<wire x1="-7.3406" y1="2.3749" x2="-7.3406" y2="-2.3749" width="0.254" layer="21"/>
+<wire x1="-7.3406" y1="-2.3749" x2="7.3406" y2="-2.3749" width="0.254" layer="21"/>
+<wire x1="7.3406" y1="-2.3749" x2="7.3406" y2="2.3749" width="0.254" layer="21"/>
+<wire x1="7.3406" y1="2.3749" x2="-7.3406" y2="2.3749" width="0.254" layer="21"/>
+<text x="-7.62" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="1.27" layer="27">&gt;NAME</text>
+<wire x1="-4.826" y1="1.27" x2="-3.302" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-4.826" y1="-1.27" x2="-3.302" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="3.302" y1="1.27" x2="4.826" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.302" y1="-1.27" x2="4.826" y2="-1.27" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -626,6 +642,17 @@ chip</description>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <text x="-5.08" y="-7.62" size="1.27" layer="97">&gt;PACKAGE</text>
 </symbol>
+<symbol name="FUSE">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
@@ -633,7 +660,7 @@ chip</description>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-744777920" package="744777920-INDUCTOR">
+<device name="-744777920" package="WURTH-744777920-IND">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -684,7 +711,7 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-7443340330" package="7443340330-IND">
+<device name="-7443340330" package="WURTH-7443340330-IND">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -716,7 +743,7 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-744029100" package="744029100-IND">
+<device name="-744029100" package="WURTH-744029100-IND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -725,7 +752,19 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-7447709470" package="7447709470-IND">
+<device name="-7447709470" package="WURTH-12X12X10-IND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="7447709470" constant="no"/>
+<attribute name="PACKAGE" value="WURTH-12X12X10" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-7447789002" package="WURTH-7447789002-IND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -734,13 +773,17 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-7447789002" package="7447789002-IND">
+<device name="-7447709100" package="WURTH-12X12X10-IND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="7447709100" constant="no"/>
+<attribute name="PACKAGE" value="WURTH-12X12X10" constant="no"/>
+<attribute name="VALUE" value="10u" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -931,7 +974,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="6.6x6.6" constant="no"/>
+<attribute name="TYPE" value="??" constant="no"/>
+<attribute name="VOLTAGE" value="??V" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-7343" package="7343-CAP">
@@ -940,7 +987,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connect gate="G$1" pin="-" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PACKAGE" value="7343" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -959,6 +1008,25 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <technology name="">
 <attribute name="PACKAGE" value="0402" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE" prefix="F">
+<description>Mini ATO Fuse PC Clip ASSY
+Keystone 3544-2
+500V/20A</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LS-3544-2" package="FUSE-KS-3544-2">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
+<connect gate="G$1" pin="2" pad="P$3 P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
